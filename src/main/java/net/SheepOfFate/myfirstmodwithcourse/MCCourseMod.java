@@ -1,5 +1,9 @@
 package net.SheepOfFate.myfirstmodwithcourse;
 
+import net.SheepOfFate.myfirstmodwithcourse.block.ModBlocks;
+import net.SheepOfFate.myfirstmodwithcourse.item.ModCreativeModeTabs;
+import net.SheepOfFate.myfirstmodwithcourse.item.ModItems;
+import net.minecraft.world.item.CreativeModeTabs;
 import org.slf4j.Logger;
 
 import com.mojang.logging.LogUtils;
@@ -42,6 +46,11 @@ public class MCCourseMod {
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
 
+        ModCreativeModeTabs.register(modEventBus);
+
+        ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
+
         // Register our mod's ModConfigSpec so that FML can create and load the config file for us
         modContainer.registerConfig(ModConfig.Type.COMMON, Config.SPEC);
     }
@@ -60,6 +69,11 @@ public class MCCourseMod {
 
     // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
+
+        if(event.getTabKey() == CreativeModeTabs.INGREDIENTS){
+            event.accept(ModItems.BLACK_OPAL);
+            event.accept(ModItems.RAW_BLACK_OPAL);
+        }
 
     }
 

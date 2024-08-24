@@ -1,0 +1,11 @@
+{
+  "item.myfirstmodwithcourse.black_opal": "Black Opal",
+  "item.myfirstmodwithcourse.raw_black_opal": "Raw Black Opal",
+
+  "block.myfirstmodwithcourse.black_opal_block": "Black Opal Block",
+  "block.myfirstmodwithcourse.raw_black_opal_block": "Raw Black Opal Block",
+  "block.myfirstmodwithcourse.black_opal_end_ore": "Black Opal End Ore",
+
+  "itemGroup.myfirstmodwithcourse.black_opal_items_creative_mode_tab": "Black Opal Items",
+  "itemGroup.myfirstmodwithcourse.black_opal_blocks_creative_mode_tab": "Black Opal Blocks"
+}
