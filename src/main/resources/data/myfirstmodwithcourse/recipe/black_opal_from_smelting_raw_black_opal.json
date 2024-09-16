@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 1.2,
+  "ingredient": {
+    "item": "myfirstmodwithcourse:raw_black_opal"
+  },
+  "result": {
+    "id": "myfirstmodwithcourse:black_opal"
+  }
+}
